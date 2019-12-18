@@ -1,0 +1,19 @@
+git config --global user.name "Èerný Jiøí"
+
+#(pøes ssh) git config --global user.email "jiri.cerny3@innogy.com"
+git config --global http."https://git.innogy.cz/".sslVerify false
+
+#git remote rename origin old-origin
+git remote remove origin
+
+git remote add origin https://git.innogy.cz/cerny4/jc_ukazkovy_projekt.git
+
+git add .
+
+git commit -m "Initial commit"
+
+git pull -r origin master
+git push -u origin master
+
+git commit -m "Update"
+git push -u origin master
